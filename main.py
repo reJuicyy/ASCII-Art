@@ -14,7 +14,6 @@ class Pixel:
 class Image:
     def __init__(self) -> None:
         self.CHARACTERS_1 = " .°*oO#@"
-        self.CHARACTERS_2 = """$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'. """
         self.CHARACTERS_2 = """ .'`^",:;Il!i><~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"""
         self.MAX_CHANNEL_VALUES = 255*3
     
@@ -77,6 +76,3 @@ def img_ascii_art(file_path):
     dr = Draw()
     arr = dr.img_to_char(imgr)
     dr.draw_image(arr)
-    
-    
-img_ascii_art("IMG_6895.jpg")
